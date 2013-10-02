@@ -1,0 +1,6 @@
+recursive-include tomcom *
+recursive-include docs *
+include *.rst
+global-exclude *.pyc
+global-exclude *.mo
+global-exclude ._*
