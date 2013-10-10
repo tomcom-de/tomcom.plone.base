@@ -9,6 +9,7 @@
     <i18n:registerTranslations directory="locales" />
 
     <include file="profiles.zcml" />
+    <include file="permissions.zcml"/>
 
     <five:registerPackage package="." initialize=".initialize" />
 

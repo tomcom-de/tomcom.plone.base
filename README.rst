@@ -14,4 +14,7 @@ for deleting a content element
 
 > class="confirm-delete"
 
+Roles / Permissions
+===================
 
+"Is Site Administrator" a permission wich only belongs to Site Administrator
