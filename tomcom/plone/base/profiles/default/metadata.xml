@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <metadata>
   <version>4.3.0.0</version>
-  <!-- ##code-section METADATA -->
-  <!-- ##/code-section METADATA -->
+  <dependencies>
+    <dependency>profile-jarn.jsi18n:default</dependency>
+  </dependencies>
 </metadata>

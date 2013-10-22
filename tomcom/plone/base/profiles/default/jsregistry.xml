@@ -3,4 +3,10 @@
  <javascript authenticated="False" bundle="jquery" cacheable="True"
     compression="save" conditionalcomment="" cookable="True" enabled="True"
     expression="" id="++theme++tcpb/js/confirm.js" inline="False"/>
+ <javascript authenticated="False" bundle="jquery" cacheable="True"
+    compression="None" conditionalcomment="" cookable="True" enabled="True"
+    expression="" id="++theme++tcpb/js/bootstrap.min.js" inline="False"/>
+ <javascript authenticated="False" bundle="jquery" cacheable="True"
+    compression="None" conditionalcomment="" cookable="True" enabled="True"
+    expression="" id="++theme++tcpb/js/toolbar.js" inline="False"/>
 </object>

@@ -1,0 +1,34 @@
+
+<tal:block tal:condition="python:not here.getAdapter('isanon')()">
+
+    <div i18n:domain="plone"
+         id="globalactions"
+         class="globalactions-right"
+         tal:define="getbrain python:context.getAdapter('getbrain')">
+
+        <div class="globalactions-body clearfix">
+            <div>
+                <tal:block tal:define="categories python:['quicklinks']">
+                    <metal:block metal:use-macro="context/tcb_navbar/macros/main"/>
+                </tal:block>
+            </div>
+            <div class="">
+                <a tal:attributes="href string:${here/portal_url}/plone_memberprefs_panel">
+                    <i class="icon-user"></i>
+                    &nbsp;
+                    <tal:block tal:define="user python:here.getAdapter('auth')()"
+                               tal:content="python:user.getId()+' ('+(user and user.getProperty('fullname') and user.getProperty('fullname') or user.getId())+')'"/>
+                </a>
+            </div>
+            <div>
+                <a tal:attributes="href string:${here/absolute_url}/logout"
+                   i18n:translate="">
+                   <i class="icon-signout"></i>
+                   &nbsp;Ausloggen
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</tal:block>

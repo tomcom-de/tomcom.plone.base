@@ -29,6 +29,7 @@ setup(name='tomcom.plone.base',
       install_requires=[
         'setuptools',
         'jarn.jsi18n',
+        'tomcom.plone.ptregistry',
       ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require,
