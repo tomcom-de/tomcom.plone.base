@@ -10,7 +10,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="tomcom plone base"
+      title="tomcom.plone.base"
       directory="profiles/default"
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"

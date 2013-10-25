@@ -24,4 +24,10 @@
     <pt:registry
         path="templates"/>
 
+    <adapter
+        for="*"
+        name="annotation"
+        provides="zope.annotation.interfaces.IAnnotations"
+        factory="zope.annotation.attribute.AttributeAnnotations"  />
+
 </configure>
