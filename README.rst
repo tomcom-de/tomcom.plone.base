@@ -24,3 +24,4 @@ Bootstrap
 
 If you install this package, there is a complete set of
 bootstrap 2.3.2 and Font Awesome included. Some css of plone will be disabled.
+
