@@ -2,9 +2,6 @@ h1, h2{
     letter-spacing: 0px;
 }
 
-label{
-    display: inline;
-}
 
 .formHelp {
     font-size: 11px;
