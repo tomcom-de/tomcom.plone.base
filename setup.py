@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
-version = '4.3.0.5'
+version = '4.3.0.1'
 
 tests_require = [
     'plone.app.testing',
     'pyquery'
     ]
 
-setup(name='tomcom.plone.base',
+setup(name='tomcom.adapters.renderzpt',
       version=version,
       description='Little helpers',
       long_description=open("README.rst").read() + '\n' +
@@ -21,15 +21,13 @@ setup(name='tomcom.plone.base',
       keywords='tomcom plone',
       author='tomcom GmbH',
       author_email='mailto:info@tomcom.de',
-      url='https://github.com/tomcom-de/tomcom.plone.base',
+      url='http://stash.tomcom.de/scm/PLONE/tomcom.adapters.renderzpt',
       license='GPL2',
       packages=find_packages(),
-      namespace_packages=['tomcom','tomcom.plone'],
+      namespace_packages=['tomcom','tomcom.adapters'],
       include_package_data=True,
       install_requires=[
         'setuptools',
-        'jarn.jsi18n',
-        'tomcom.plone.ptregistry',
       ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require,
