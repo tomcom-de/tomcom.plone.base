@@ -1,0 +1,389 @@
+h1, h2{
+    letter-spacing: 0px;
+}
+
+
+.formHelp {
+    font-size: 11px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0;
+}
+
+/***************************************/
+
+input.context,
+input[type="submit"],
+input.standalone,
+input.button-object-actions {
+display: inline-block;
+*display: inline;
+/* IE7 inline-block hack */
+
+*zoom: 1;
+padding: 4px 10px 4px;
+margin-bottom: 0;
+font-size: 13px;
+line-height: 18px;
+*line-height: 20px;
+color: #333333;
+text-align: center;
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+vertical-align: top;
+cursor: pointer;
+background-color: #f5f5f5;
+background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: linear-gradient(top, #ffffff, #e6e6e6);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+*background-color: #e6e6e6;
+/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+border: 1px solid #cccccc;
+*border: 0;
+border-bottom-color: #b3b3b3;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+*margin-left: .3em;
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+input.context:hover,
+input.context:active,
+input.context.active,
+input.context.disabled,
+input.context[disabled],
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"].active,
+input[type="submit"].disabled,
+input[type="submit"][disabled],
+input.standalone:hover,
+input.standalone:active,
+input.standalone.active,
+input.standalone.disabled,
+input.standalone[disabled],
+input.button-object-actions:hover,
+input.button-object-actions:active,
+input.button-object-actions.active,
+input.button-object-actions.disabled,
+input.button-object-actions[disabled] {
+background-color: #e6e6e6;
+*background-color: #d9d9d9;
+}
+
+input.context:active,
+input.context.active,
+input[type="submit"]:active,
+input[type="submit"].active,
+input.standalone:active,
+input.standalone.active ,
+input.button-object-actions:active,
+input.button-object-actions.active {
+background-color: #cccccc \9;
+}
+
+input.context:first-child,
+input[type="submit"]:first-child,
+input.standalone:first-child,
+input.button-object-actions:first-child {
+*margin-left: 0;
+}
+
+input[type="submit"]:hover ,
+input.context:hover ,
+input.standalone:hover,
+input.button-object-actions:hover {
+color: #333333;
+text-decoration: none;
+background-color: #e6e6e6;
+*background-color: #d9d9d9;
+/* Buttons in IE7 don't get borders, so darken on hover */
+
+background-position: 0 -15px;
+-webkit-transition: background-position 0.1s linear;
+-moz-transition: background-position 0.1s linear;
+-ms-transition: background-position 0.1s linear;
+-o-transition: background-position 0.1s linear;
+transition: background-position 0.1s linear;
+}
+
+input[type="submit"]:focus
+input.context:focus
+input.standalone:focus,
+input.button-object-actions:focus, {
+outline: thin dotted #333;
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px;
+}
+
+/***************************************/
+
+
+body#content{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#content h1.documentFirstHeading{
+	margin
+}
+/*
+#content a:link, dl.portlet a:link {
+    border-bottom: 0;
+}
+*/
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    height: auto;
+}
+
+.cke_dialog_ui_input_text input{
+    border-radius: 0 0 0 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
+}
+
+#plone-browser input {
+    padding: 4px 6px !important;
+}
+
+.field {
+clear: both;
+margin-bottom: 1em;
+}
+
+/*
+.field label{
+display: inline-block;
+}
+*/
+.fieldTextFormat {
+text-align: right;
+margin-right: 0.75em;
+}
+
+#content textarea,
+input[type="text"][name$=".title"], input#title {
+    width: 98%;
+}
+
+/* Bootstrap Plone Fix start */
+
+#subject-tags .newTagsSection {
+margin-left: 0em;
+}
+
+#fieldset-dates .formQuestion {
+margin-bottom: 10px;
+}
+
+.formHelp{
+    color: #999999;
+    font-size: 10px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    display: block;
+}
+
+.formHelp:hover{
+    color: #333333;
+    font-size: 12px;
+}
+
+
+#fieldset-dates .formHelp {
+color: #FFFFFF;
+font-size: 80%;
+}
+
+#fieldset-dates select {
+width: auto;
+}
+
+#content fieldset{
+
+}
+
+form fieldset{
+}
+
+.template-stage_edit fieldset legend{
+    background-color: #cccccc;
+    color: #333333;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+.template-stage_edit #content fieldset ul{
+    list-style: none;
+    margin-left: 5px;
+}
+
+.template-stage_edit #content form{
+
+}
+
+.template-stage_edit fieldset fieldset legend{
+    font-size: 14px;
+    background-color: transparent;
+    color: #333333;
+    font-weight: normal;
+}
+
+/* Bootstrap Plone Fix end */
+
+
+
+dl.portalMessage{
+    margin-left: 0px;
+}
+
+dl.portalMessage,
+div.attention,
+div.caution,
+div.danger,
+div.error,
+div.hint,
+div.important,
+div.note,
+div.tip,
+div.warning {
+    font-size: 100%;
+    padding: 10px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+dl.portalMessage{
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+dl.portalMessage,
+div.hint,
+div.note,
+div.tip,
+dl.hint,
+dl.note,
+dl.tip{
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+div.attention,
+div.caution,
+div.warning,
+dl.attention,
+dl.caution,
+dl.warning{
+    color: #c09853;
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+}
+
+div.error,
+dl.error{
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+div.danger,
+dl.danger{
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+.label .formHelp,
+.label .formHelp:hover{
+    color: #FFFFFF;
+    white-space: normal;
+}
+
+dl.portalMessage dt,
+div > .admonition-title{
+    text-shadow: none;
+    background-color: #FFF;
+    color: #a1a1a1;
+}
+
+.attention > dd, .attention > .last,
+.caution > dd, .caution > .last,
+.danger > dd, .danger > .last,
+.error > dd, .error > .last,
+.hint > dd, .hint > .last,
+.important > dd, .important > .last,
+.note > dd, .tip .last,
+.tip > dd, .important > .last,
+.warning > dd, .warning > .last{
+    background-color: transparent;
+}
+
+div.overlay div.close{
+    left: auto;
+    right: -14px;
+    opacity: 1;
+}
+
+div.overlay{
+    font-size: 100%;
+}
+
+table.listing{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.formControls {
+    margin: 0em;
+}
+
+.link-parent{
+    padding: 10px 10px 10px 0px;
+    display: block;
+    /*
+    float: left;
+    */
+}
+
+.link-parent:after{
+    clear: both;
+    display:table;
+    line-height:0;
+    content:""
+}
+
+.well h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.template-configure_stage .well label{
+    display: block;
+}
+
+.cke_skin_kama input.cke_dialog_ui_input_text, .cke_skin_kama input.cke_dialog_ui_input_password {
+    height: auto !important;
+}
