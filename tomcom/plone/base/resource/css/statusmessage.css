@@ -1,0 +1,7 @@
+#js-status-message {
+position:fixed;
+top:50%;
+display:none;
+z-index:9999999;
+left:50%;
+}

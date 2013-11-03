@@ -9,4 +9,7 @@
  <javascript authenticated="False" bundle="jquery" cacheable="True"
     compression="None" conditionalcomment="" cookable="True" enabled="True"
     expression="" id="++theme++tcpb/js/toolbar.js" inline="False"/>
+ <javascript authenticated="False" bundle="jquery" cacheable="True"
+    compression="None" conditionalcomment="" cookable="True" enabled="True"
+    expression="" id="++theme++tcpb/js/statusmessage.js" inline="False"/>
 </object>
