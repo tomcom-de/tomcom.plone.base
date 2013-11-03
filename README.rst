@@ -25,3 +25,10 @@ Bootstrap
 If you install this package, there is a complete set of
 bootstrap 2.3.2 and Font Awesome included. Some css of plone will be disabled.
 
+Status message
+==============
+
+A simple statusmessage to display an informaton for the user. 'success' is the
+bootstrap style type Alle in bootstrap defined alert types are avaliable.
+
+> $.status_message('Hello world','success');
