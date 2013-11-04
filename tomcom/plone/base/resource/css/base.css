@@ -1,6 +1,9 @@
 /* @group Content Area */
 
 /* Content list styles */
+
+/*
+--bootstrap--
 #content ul {
     list-style-type: disc;
     margin-left: 2em;
@@ -20,7 +23,7 @@ div.portletStaticText li {
     line-height: 1.5em;
     display: list-item;
 }
-
+*/
 
 
 /* Editor styles */
