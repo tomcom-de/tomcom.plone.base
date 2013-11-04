@@ -9,7 +9,7 @@ h1, h2{
 
 input[type="radio"],
 input[type="checkbox"] {
-    margin: 0;
+
 }
 
 /***************************************/
@@ -210,7 +210,8 @@ color: #FFFFFF;
 font-size: 80%;
 }
 
-#fieldset-dates select {
+#fieldset-dates select,
+.plone_jscalendar select{
 width: auto;
 }
 
@@ -386,4 +387,13 @@ div.formControls {
 
 .cke_skin_kama input.cke_dialog_ui_input_text, .cke_skin_kama input.cke_dialog_ui_input_password {
     height: auto !important;
+}
+
+.field input[type="radio"],
+.field input[type="checkbox"] {
+    margin-right: 5px;
+    float: left;
+}
+.field br{
+    display: none;
 }

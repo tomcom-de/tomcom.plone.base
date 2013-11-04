@@ -4,6 +4,7 @@
 .plone-toolbar{
     font-size: 12px;
     position: relative;
+    z-index: 10000;
 }
 
 .plone-toolbar ul{
@@ -472,7 +473,7 @@ cursor: default;
 
 .icons-on #plone-contentmenu-factories .contenttype-file,
 .icons-on #plone-contentmenu-factories .contenttype-image,
-.plone-toolbar dd.actionMenuContent li a{
+.plone-toolbar #plone-contentmenu-factories dd.actionMenuContent li a{
     padding-left: 30px !important;
 }
 
