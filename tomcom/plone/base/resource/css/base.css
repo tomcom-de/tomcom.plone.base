@@ -375,7 +375,7 @@ dl.collapsible dd.collapsibleContent > dl {
 dl.expandedInlineCollapsible dt.collapsibleHeader,
 dl.expandedBlockCollapsible dt.collapsibleHeader {
     padding: 0 0.5em 0 2em;
-    background: White url(treeExpanded.png) no-repeat 0.5em 50%;
+    background: White url(/treeExpanded.png) no-repeat 0.5em 50%;
     cursor: pointer;
 }
 
@@ -392,7 +392,7 @@ dl.collapsedBlockCollapsible dt.collapsibleHeader {
     padding: 0 0.5em 0 2em;
     line-height: 1.2em;
     cursor: pointer;
-    background: White url(treeCollapsed.png) no-repeat 0.5em 50%;
+    background: White url(/treeCollapsed.png) no-repeat 0.5em 50%;
 }
 dl.collapsedInlineCollapsible dd.collapsibleContent,
 dl.collapsedBlockCollapsible dd.collapsibleContent {
@@ -693,7 +693,7 @@ dl.toc dd ol {
     margin: 0em;
     padding: 0px 6px 0px 9px;
     text-align: center;
-    background-image: url('polaroid-single.png');
+    background-image: url(/'polaroid-single.png');
     background-repeat: no-repeat;
 }
 .photoAlbumEntry img {
@@ -716,7 +716,7 @@ dl.toc dd ol {
     margin: 16px auto 0px;
 }
 .photoAlbumFolder {
-    background-image: url('polaroid-multi.png');
+    background-image: url(/'polaroid-multi.png');
     background-repeat: no-repeat;
 }
 .photoAlbumEntryTitle {
@@ -780,7 +780,6 @@ div.overlay {
     display: none;
     /* some padding to layout nested elements nicely  */
     margin: 1em;
-    font-size: 80%;
 }
 
 div.overlay-iframe,
@@ -797,7 +796,7 @@ div.overlay-iframe {
 /* default close button positioned on upper-left corner */
 div.overlaybg div.close,
 div.overlay div.close {
-    background-image: url(pb_close.png);
+    background-image: url(/pb_close.png);
     position: absolute;
     left: -14px;
     top: -14px;
@@ -976,36 +975,36 @@ a.historyComparePrevious span {
 */
 
 .icons-on .contenttype-document {
-    background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px 4px url(/contenttypes-sprite.png);
 }
 .icons-on .contenttype-event {
-    background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -212px url(/contenttypes-sprite.png);
 }
 .icons-on .contenttype-folder {
-    background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -644px url(/contenttypes-sprite.png);
 }
 .icons-on .contenttype-link {
-    background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1076px url(/contenttypes-sprite.png);
 }
 .icons-on .contenttype-news-item {
-    background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1292px url(/contenttypes-sprite.png);
 }
 .icons-on .contenttype-plone-site {
-    background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1508px url(/contenttypes-sprite.png);
 }
 .icons-on .contenttype-collection {
-    background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1724px url(/contenttypes-sprite.png);
 }
 .icons-on .contenttype-topic {
-    background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1724px url(/contenttypes-sprite.png);
 }
 
 /* These should only appear in the add menu */
 .icons-on #plone-contentmenu-factories .contenttype-file {
-    background: no-repeat transparent 0px -428px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -428px url(/contenttypes-sprite.png);
 }
 .icons-on #plone-contentmenu-factories .contenttype-image {
-    background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -860px url(/contenttypes-sprite.png);
 }
 
 .icons-on .contenttype-document,

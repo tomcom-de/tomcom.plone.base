@@ -397,3 +397,9 @@ div.formControls {
 .field br{
     display: none;
 }
+
+.pb-ajax > div {
+padding:0px;
+margin:1em;
+width: auto;
+}
