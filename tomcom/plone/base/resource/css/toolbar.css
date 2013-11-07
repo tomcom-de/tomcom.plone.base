@@ -254,6 +254,19 @@ padding-left: 10px;
     border-bottom: 1px solid #EEEEEE;
 }
 
+.plone-toolbar .icons-on .contenttype-document,
+.plone-toolbar .icons-on .contenttype-event,
+.plone-toolbar .icons-on .contenttype-folder,
+.plone-toolbar .icons-on .contenttype-link,
+.plone-toolbar .icons-on .contenttype-news-item,
+.plone-toolbar .icons-on .contenttype-plone-site,
+.plone-toolbar .icons-on .contenttype-collection,
+.plone-toolbar .icons-on .contenttype-topic,
+.plone-toolbar .icons-on #plone-contentmenu-factories .contenttype-file,
+.plone-toolbar .icons-on #plone-contentmenu-factories .contenttype-image{
+    padding-left: 30px !important;
+}
+
 .actionMenu .actionMenuContent li .contenttype-image {
     background-position: 10px -853px !important;
 }
@@ -456,12 +469,6 @@ cursor: default;
     width: 120px;
     margin-top: -3px;
     margin-bottom: 0px;
-}
-
-.icons-on #plone-contentmenu-factories .contenttype-file,
-.icons-on #plone-contentmenu-factories .contenttype-image,
-.plone-toolbar #plone-contentmenu-factories dd.actionMenuContent li a{
-    padding-left: 30px !important;
 }
 
 #globalactions .nav .dropdown-menu{
