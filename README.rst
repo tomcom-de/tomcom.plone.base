@@ -14,6 +14,15 @@ for deleting a content element
 
 > class="confirm-delete"
 
+Prevent the default click event. Usefull for dummy anker.
+
+> <a class="no-click"
+
+A overlay will appear. The link is the target
+
+> <a class="custom-overlay-ajax"
+
+
 Roles / Permissions
 ===================
 
@@ -32,3 +41,17 @@ A simple statusmessage to display an informaton for the user. 'success' is the
 bootstrap style type Alle in bootstrap defined alert types are avaliable.
 
 > $.status_message('Hello world','success');
+
+
+Toolbar
+=======
+
+Move toolbar to the top of your template.
+
+::
+
+    <div class="plone-toolbar clearfix"
+         tal:condition="context/@@plone/showEditableBorder">
+        <tal:block tal:replace="structure provider:plone.contentviews"/>
+    </div>
+
