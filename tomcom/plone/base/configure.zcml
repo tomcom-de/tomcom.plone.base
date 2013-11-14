@@ -10,6 +10,7 @@
 
     <include file="profiles.zcml" />
     <include file="permissions.zcml"/>
+    <include file="ptfpatch.zcml"/>
 
     <five:registerPackage package="." initialize=".initialize" />
 
@@ -29,5 +30,6 @@
         name="annotation"
         provides="zope.annotation.interfaces.IAnnotations"
         factory="zope.annotation.attribute.AttributeAnnotations"  />
+
 
 </configure>

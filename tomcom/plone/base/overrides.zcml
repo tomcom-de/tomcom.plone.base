@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <browser:page
+        name="batchnavigation"
+        for="*"
+        permission="zope.Public"
+        class="plone.batching.browser.PloneBootstrapBatchView"
+        />
+
+  <browser:page
+      name="usergroup-userprefs"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class="plone.app.controlpanel.usergroups.UsersOverviewControlPanel"
+      permission="plone.app.controlpanel.UsersAndGroups"
+      template="overrides/templates/usergroups_usersoverview.pt"
+      />
+
+  <browser:page
+      name="usergroup-groupprefs"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class="plone.app.controlpanel.usergroups.GroupsOverviewControlPanel"
+      permission="plone.app.controlpanel.UsersAndGroups"
+      template="overrides/templates/usergroups_groupsoverview.pt"
+      />
+
+</configure>

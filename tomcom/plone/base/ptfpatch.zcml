@@ -1,0 +1,39 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:five="http://namespaces.zope.org/five"
+           xmlns:plone="http://namespaces.plone.org/plone"
+           xmlns:ptf="http://namespaces.plone.org/ptf">
+
+    <ptf:patch
+        current_path="/eggs/plone.batching-1.0-py2.7.egg/plone/batching/batchnavigation_bootstrap.pt"
+        new_path="overrides/templates/batchnavigation_bootstrap.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.batching-1.0-py2.7.egg/plone/batching/batchnavigation.pt"
+        new_path="overrides/templates/batchnavigation_bootstrap.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/archetypes.referencebrowserwidget-2.4.19-py2.7.egg/archetypes/referencebrowserwidget/browser/popup.pt"
+        new_path="overrides/templates/refbrowser_popup.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.app.users-1.2a2-py2.7.egg/plone/app/users/memberregistration.pt"
+        new_path="overrides/templates/memberregistration.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.app.content-2.1.3-py2.7.egg/plone/app/content/browser/table.pt"
+        new_path="overrides/templates/folder_contents_table.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.app.content-2.1.3-py2.7.egg/plone/app/content/browser/folder_contents.pt"
+        new_path="overrides/templates/folder_contents.pt"
+        />
+
+folder_contents_table
+
+</configure>
