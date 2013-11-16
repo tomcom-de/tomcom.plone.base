@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '4.3.0.13'
+version = '4.3.0.14'
 
 tests_require = [
     'plone.app.testing',
