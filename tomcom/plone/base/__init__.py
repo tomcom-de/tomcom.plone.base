@@ -11,6 +11,7 @@ from Products.CMFCore import DirectoryView
 registerFileExtension('woff', FSFile)
 registerFileExtension('eot', FSFile)
 registerFileExtension('ttf', FSFile)
+registerFileExtension('html', FSFile)
 
 product_globals = globals()
 DirectoryView.registerDirectory('skins', product_globals)
