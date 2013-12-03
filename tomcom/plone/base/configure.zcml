@@ -3,10 +3,17 @@
            xmlns:five="http://namespaces.zope.org/five"
            xmlns:i18n="http://namespaces.zope.org/i18n"
            xmlns:plone="http://namespaces.plone.org/plone"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
            xmlns:pt="http://namespaces.plone.org/pt"
            i18n_domain="plone">
 
     <i18n:registerTranslations directory="locales" />
+
+    <configure zcml:condition="installed plone.reload">
+        <class class="Products.CMFPlone.Portal.PloneSite">
+            <implements interface="OFS.interfaces.IApplication" />
+        </class>
+    </configure>
 
     <include file="profiles.zcml" />
     <include file="permissions.zcml"/>
