@@ -57,3 +57,27 @@ Move toolbar to the top of your template.
         <tal:block tal:replace="structure provider:plone.contentviews"/>
     </div>
 
+
+Copyrights and licenses
+=======================
+
+Bootstrap
+
+- Copyright 2012 Twitter, Inc.
+- Licensed under the `Apache License v2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_.
+- See DOCS-LICENSE, LICENSE, LICENSE-MIT for bootstrap license
+
+We changed the font path in the css files for a clean plone integration.
+
+Font Awesome is licensed under GPL see http://fontawesome.io/license/ for additional information.
+
+Font Awesome
+ Font licensed under the `SIL Open Font License
+ <http://scripts.sil.org/OFL>`_.
+
+ CSS, LESS, and SASS files licensed under the
+ `MIT License
+ <http://opensource.org/licenses/mit-license.html>`_.
+
+ Pictograms licensed under the `CC BY 3.0 License
+ <http://creativecommons.org/licenses/by/3.0/>`_.
