@@ -9,12 +9,6 @@
 
     <i18n:registerTranslations directory="locales" />
 
-    <configure zcml:condition="installed plone.reload">
-        <class class="Products.CMFPlone.Portal.PloneSite">
-            <implements interface="OFS.interfaces.IApplication" />
-        </class>
-    </configure>
-
     <include file="profiles.zcml" />
     <include file="permissions.zcml"/>
     <include file="ptfpatch.zcml"/>
