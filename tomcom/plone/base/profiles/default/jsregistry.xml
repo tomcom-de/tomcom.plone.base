@@ -5,9 +5,6 @@
     expression="" id="++theme++tcpb/js/confirm.js" inline="False"/>
  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="None" conditionalcomment="" cookable="True" enabled="True"
-    expression="" id="++theme++tcpb/js/bootstrap.min.js" inline="False"/>
- <javascript authenticated="False" bundle="default" cacheable="True"
-    compression="None" conditionalcomment="" cookable="True" enabled="True"
     expression="" id="++theme++tcpb/js/toolbar.js" inline="False"/>
  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="None" conditionalcomment="" cookable="True" enabled="True"

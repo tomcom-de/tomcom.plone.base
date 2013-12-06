@@ -9,11 +9,14 @@
 
     <i18n:registerTranslations directory="locales" />
 
-    <configure zcml:condition="installed plone.reload">
-        <class class="Products.CMFPlone.Portal.PloneSite">
-            <implements interface="OFS.interfaces.IApplication" />
-        </class>
-    </configure>
+    <browser:page
+        name="reload"
+        for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+        permission="zope2.ViewManagementScreens"
+        class="plone.reload.browser.Reload"
+        template="overrides/templates/reload.pt"
+        allowed_interface="plone.reload.interfaces.IReload"
+        />
 
     <include file="profiles.zcml" />
     <include file="permissions.zcml"/>

@@ -336,6 +336,7 @@ padding-left: 10px;
     list-style-type: none;
     margin-bottom: 0px;
     border-bottom: 1px solid #ccc;
+    padding-left: 0px;
 }
 
 .formTabs:before,
