@@ -14,11 +14,17 @@
          meta_type="Filesystem Directory View"
          directory="tomcom.plone.base:skins/tpb_plone_css"/>
 
+ <object name="tpb_plone_css"
+         meta_type="Filesystem Directory View"
+         directory="tomcom.plone.base:skins/tpb_plone_js"/>
+
  <skin-path name="*">
   <layer insert-after="custom"
          name="tpb_plone_templates"/>
   <layer insert-after="custom"
          name="tpb_plone_css"/>
+  <layer insert-after="custom"
+         name="tpb_plone_js"/>
  </skin-path>
 
 </object>
