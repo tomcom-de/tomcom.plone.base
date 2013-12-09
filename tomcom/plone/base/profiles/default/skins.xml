@@ -14,7 +14,7 @@
          meta_type="Filesystem Directory View"
          directory="tomcom.plone.base:skins/tpb_plone_css"/>
 
- <object name="tpb_plone_css"
+ <object name="tpb_plone_js"
          meta_type="Filesystem Directory View"
          directory="tomcom.plone.base:skins/tpb_plone_js"/>
 
