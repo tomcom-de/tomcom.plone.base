@@ -8,4 +8,19 @@ $(document).ready(function () {
         subtype: 'ajax',
     });
 
+    $('.select-all').live("click",
+        function(event){
+            class_='.'+$(event.target).attr('rel');
+            if ($(event.target).is(':checked')) {
+                $(class_).attr('checked', true);
+            } else {
+                $(class_).attr('checked', false);
+            }
+    });
+
 });
+
+
+
+
+
