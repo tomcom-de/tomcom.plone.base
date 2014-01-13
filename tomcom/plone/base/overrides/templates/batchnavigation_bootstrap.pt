@@ -1,15 +1,11 @@
-<!-- Pagination Twitter Bootstrap style
-     http://twitter.github.com/bootstrap/components.html#pagination
-     -->
 <div class="text-center">
-    <div class="pagination"
-      i18n:domain="plone"
-      metal:define-macro="navigation"
-      tal:define="batch view/batch|nothing;"
-      tal:condition="batch">
+    <div i18n:domain="plone"
+         metal:define-macro="navigation"
+         tal:define="batch view/batch|nothing;"
+         tal:condition="batch">
 
-      <ul
-        tal:condition="batch/multiple_pages">
+      <ul class="pagination"
+          tal:condition="batch/multiple_pages">
 
         <!-- First -->
         <li class="previous" tal:condition="batch/show_link_to_first">

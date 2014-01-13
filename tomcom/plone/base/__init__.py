@@ -12,6 +12,7 @@ registerFileExtension('woff', FSFile)
 registerFileExtension('eot', FSFile)
 registerFileExtension('ttf', FSFile)
 registerFileExtension('html', FSFile)
+registerFileExtension('map', FSFile)
 
 product_globals = globals()
 DirectoryView.registerDirectory('skins', product_globals)

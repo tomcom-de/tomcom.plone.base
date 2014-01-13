@@ -2,136 +2,137 @@
 /* Toolbar start */
 
 .plone-toolbar{
-    font-size: 12px;
-    position: relative;
-    z-index: 10000;
+font-size: 12px;
+position: relative;
+z-index: 10000;
 }
 
 .plone-toolbar ul{
-   margin: 0px;
+margin: 0px;
 }
 
 .plone-toolbar .hiddenStructure{
-    display:none;
+display:none;
 }
 
 .plone-toolbar .contentViews{
-    background-color: #232323;
-    background-image: linear-gradient(to bottom, #232323, #2D2D2D);
-    padding:0 0 0 13px;
-    border-top:1px solid #232323;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
+background-color: #232323;
+background-image: linear-gradient(to bottom, #232323, #2D2D2D);
+padding:0 0 0 13px;
+border-top:1px solid #232323;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
 }
 
 .plone-toolbar .contentActions{
-    background-color: #CECECE;
-    background-image: linear-gradient(to bottom, #CECECE, #CECECE);
-    border-bottom: 1px solid #BABABA;
+background-color: #CECECE;
+background-image: linear-gradient(to bottom, #CECECE, #CECECE);
+border-bottom: 1px solid #BABABA;
 }
 
 .plone-toolbar .contentActions #contentActionMenus{
-    margin-left: 14px;
+padding-left: 14px;
 }
 
 .plone-toolbar .contentViews ul{
-    padding:0;
-    margin:0;
+padding:0;
+margin:0;
 }
 
 .plone-toolbar .contentViews li{
-    margin:0;
-    padding:0;
+margin:0;
+padding:0;
 }
 
 .plone-toolbar .contentViews .selected a {
-    background-color: #F3F3F3;
-    background-image: linear-gradient(to bottom, #F3F3F3, #CECECE);
-    color: #333333;
-    text-shadow: 0 1px 0 #FFFFFF;
-    border: 0;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    margin:0px;
+background-color: #F3F3F3;
+background-image: linear-gradient(to bottom, #F3F3F3, #CECECE);
+color: #333333;
+text-shadow: 0 1px 0 #FFFFFF;
+border: 0;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+margin:0px;
 }
 
 .plone-toolbar .contentViews a {
-    border: 0;
-    color: #DFDFDF;
-    text-shadow: 0 1px 0 #000000;
-    padding: 10px 15px;
-    display: inline-block;
+border: 0;
+color: #DFDFDF;
+text-shadow: 0 1px 0 #000000;
+padding: 10px 15px;
+display: inline-block;
 }
 
 .plone-toolbar .contentViews li a:hover {
-    background-color: transparent;
-    color: #333333;
-    text-shadow: 0 1px 0 #FFFFFF;
-    background-color: #F3F3F3;
-    background-image: linear-gradient(to bottom, #F3F3F3, #CECECE);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+background-color: transparent;
+color: #333333;
+text-shadow: 0 1px 0 #FFFFFF;
+background-color: #F3F3F3;
+background-image: linear-gradient(to bottom, #F3F3F3, #CECECE);
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
 }
 
 .plone-toolbar li{
-    line-height: normal;
+line-height: normal;
 }
 
 .plone-toolbar .contentViews li a{
-    margin:0;
+margin:0;
 }
 
 .plone-toolbar .contentActions li {
-    border-left: 0;
-    float: left;
-    z-index: 1002;
+border-left: 0;
+float: left;
+z-index: 1002;
 }
 
 .contentActions ul, .contentActions li {
-    margin: 0;
-    list-style: none;
-    list-style-image: none;
-    color: Black;
-    text-align: left;
-    line-height: 1.6em;
+margin: 0;
+list-style: none;
+list-style-image: none;
+color: Black;
+text-align: left;
+line-height: 1.6em;
 }
 
 .plone-toolbar .contentActions a {
-    padding: 6px 13px 4px 13px;
-    color: #333333;
-    /*text-shadow: 0 1px 0 #DDDDDD;*/
-    margin-right: 0px;
-    display: block;
+padding: 6px 13px 7px 13px;
+color: #333333;
+/*text-shadow: 0 1px 0 #DDDDDD;*/
+margin-right: 0px;
+display: block;
 }
 
 .actionMenu.activated .actionMenuContent{
-    display: table !important;
-    border-collapse: collapse;
-    border-spacing: 0;
+display: table !important;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 .actionMenu .actionMenuContent {
-    display: none;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 0px;
-    top: 30px;
-    z-index: 1001;
-    background-color: #ffffff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    min-width: 160px;
-    border: 1px solid #b7b7b7;
+display: none;
+height: auto;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 0px;
+top: 30px;
+z-index: 1001;
+background-color: #ffffff;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+min-width: 160px;
+border: 0px;
 }
 .actionMenu .actionMenuContent ul {
-    border: 0;
-    font-size: 12px;
+border: 0;
+font-size: 12px;
+padding-left: 0px;
 }
 .actionMenu .actionMenuContent .actionSeparator a {
-    border-top: 0;
-    padding-top: 0.2em;
+border-top: 0;
+padding-top: 0.2em;
 }
 .actionMenu .actionMenuContent li:first-child a{
 margin: 2px 0 0 0;
@@ -150,7 +151,7 @@ padding-left: 10px;
 }
 
 .actionMenu .actionMenuContent li .link-overlay{
-    padding-left: 11px;
+padding-left: 11px;
 }
 
 #plone-contentmenu-actions .actionMenuContent li .link-overlay{
@@ -158,100 +159,86 @@ padding-left: 10px;
 }
 
 .actionMenu .actionMenuContent li div:hover{
-    background-color: #dedede;
-    color: #a1a1a1a;
+background-color: #dedede;
+color: #a1a1a1a;
 }
 
 .actionMenu .actionMenuContent li:hover{
-    background-color: #2162A0 !important;
+background-color: #2162A0 !important;
 }
 
 .actionMenu .actionMenuContent li a:hover{
-    background-color: transparent !important;
-    text-shadow: none;
-    color: #FFFFFF;
+background-color: transparent !important;
+text-shadow: none;
+color: #FFFFFF;
 }
 
 .plone-toolbar .contentActions a:hover {
-    background-color: #b4b4b4;
-    text-decoration: none;
+background-color: #b4b4b4;
+text-decoration: none;
 }
 
 .plone-toolbar .contentActions{
-    height: 30px;
-    border-left: 0;
-    border-right: 0;
+height: 30px;
+border-left: 0;
+border-right: 0;
 }
 
 .arrowDownAlternative{
-    display: none;
+display: none;
 }
 
 .actionMenu{
-    position: relative;
-    margin: 0;
-    padding: 0;
+position: relative;
+margin: 0;
+padding: 0;
 }
 
 .actionMenu .actionMenuHeader{
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+margin: 0;
+padding: 0;
+font-weight: normal;
 }
 
-.actionMenu .actionMenuContent {
-    display: none;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 0px;
-    top: 30px;
-    z-index: 1001;
-    background-color: #ffffff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    min-width: 160px;
-    border: 1px solid #b7b7b7;
-}
 
 .actionMenu .actionMenuContent ul {
-    border: 0;
+border: 0;
 }
 
 .actionMenu .actionMenuContent .actionSeparator{
 }
 
 .actionMenu .actionMenuContent .actionSeparator a {
-    border-top: 0;
-    padding-top: 0.2em;
+border-top: 0;
+padding-top: 0.2em;
 }
 
 .actionMenu .actionMenuContent li a:hover,
 .actionMenuContent{
-    background-color: #2162A0;
-    text-shadow: none;
+background-color: #2162A0;
+text-shadow: none;
 }
 
 .plone-toolbar .contentActions ul li dl dd ul li {
-    clear: both;
-    min-width: 200px;
+clear: both;
+min-width: 200px;
 }
 
 .actionMenu.activated{
-    background-color: #b4b4b4;
+background-color: #b4b4b4;
 }
 
 .plone-toolbar .actionMenuSelected{
-    background-color: #2162A0 !important;
-    color: #FFFFFF !important;
+background-color: #2162A0 !important;
+color: #FFFFFF !important;
 }
 
 .actionMenu .actionMenuContent li a {
-    display: block !important;
-    margin: 0;
-    padding: 8px 11px 8px 10px;
-    white-space: nowrap;
-    border-bottom: 1px solid #EEEEEE;
+display: block !important;
+margin: 0;
+padding: 8px 11px 8px 10px;
+white-space: nowrap;
+border-bottom: 1px solid #EEEEEE;
 }
 
 .plone-toolbar .icons-on .contenttype-document,
@@ -264,58 +251,58 @@ padding-left: 10px;
 .plone-toolbar .icons-on .contenttype-topic,
 .plone-toolbar .icons-on #plone-contentmenu-factories .contenttype-file,
 .plone-toolbar .icons-on #plone-contentmenu-factories .contenttype-image{
-    padding-left: 30px !important;
+padding-left: 30px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-image {
-    background-position: 10px -853px !important;
+background-position: 10px -853px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-collection {
-    background-position: 10px -1717px !important;
+background-position: 10px -1717px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-news-item {
-    background-position: 10px -1285px !important;
+background-position: 10px -1285px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-event {
-    background-position: 10px -204px !important;
+background-position: 10px -204px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-link {
-    background-position: 10px -1068px !important;
+background-position: 10px -1068px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-file {
-    background-position: 10px -421px !important;
+background-position: 10px -421px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-folder {
-    background-position: 10px -637px !important;
+background-position: 10px -637px !important;
 }
 
 .actionMenu .actionMenuContent li .contenttype-document {
-    background-position: 10px 12px !important;
+background-position: 10px 12px !important;
 }
 
 .actionMenu .actionMenuContent .actionSeparator a {
-    border-top: 0 none;
-    padding-top: 8px;
+border-top: 0 none;
+padding-top: 8px;
 }
-
+/*
 .actionMenu .actionMenuContent li:first-child a{
-    margin: 2px 0 0 0;
+margin: 2px 0 0 0;
 }
-
+*/
 .contentViews li, .contentActions li {
-    display: inline;
+display: inline;
 }
 
 .plone-toolbar #content-views{
-    margin-bottom: 0;
-    margin-left: 0px;
-    float: left;
+margin-bottom: 0;
+margin-left: 0px;
+float: left;
 }
 
 .subMenuTitle{
@@ -327,36 +314,36 @@ padding-left: 10px;
 /* Content tabbing start */
 
 #content .formTabs ul{
-    list-style-type: none;
+list-style-type: none;
 }
 
 #content .formTabs {
-    *zoom: 1;
-    margin-left: 0px;
-    list-style-type: none;
-    margin-bottom: 0px;
-    border-bottom: 1px solid #ccc;
-    padding-left: 0px;
+*zoom: 1;
+margin-left: 0px;
+list-style-type: none;
+margin-bottom: 0px;
+border-bottom: 1px solid #ccc;
+padding-left: 0px;
 }
 
 .formTabs:before,
 .formTabs:after {
-    display: table;
-    line-height: 0;
-    content: "";
+display: table;
+line-height: 0;
+content: "";
 }
 
 .formTabs:after {
-    clear: both;
+clear: both;
 }
 
 #content fieldset{
-    border-color: #cccccc;
+border-color: #cccccc;
 }
 
 #content .formTabs li{
-    float: left;
-    margin-bottom: 0px;
+float: left;
+margin-bottom: 0px;
 }
 
 .plone-toolbar .nav-tabs > li > a,
@@ -418,13 +405,13 @@ cursor: default;
 /* Global actions bar start */
 
 #globalactions{
-    background-color: #232323;
-    background-image: linear-gradient(to bottom, #232323, #2D2D2D);
-    padding: 0 0 0 13px;
-    border-top: 1px solid #232323;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
+background-color: #232323;
+background-image: linear-gradient(to bottom, #232323, #2D2D2D);
+padding: 0 0 0 13px;
+border-top: 1px solid #232323;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
 }
 
 .plone-toolbar #globalactions{
@@ -435,56 +422,56 @@ cursor: default;
 }
 
 #globalactions div div{
-    display: inline-block;
-    margin-left: 5px;
-    white-space: nowrap;
+display: inline-block;
+margin-left: 5px;
+white-space: nowrap;
 }
 
 #globalactions .globalactions-body{
-    text-align: right;
-    padding-right: 20px;
+text-align: right;
+padding-right: 20px;
 }
 
 #globalactions div a{
-    color: #DFDFDF;
-    text-shadow: 0 1px 0 #000000;
-    padding: 9px 5px 0px;
-    display: inline-block;
+color: #DFDFDF;
+text-shadow: 0 1px 0 #000000;
+padding: 9px 5px 0px;
+display: inline-block;
 }
 
 #globalactions div a:hover{
-    color: #FFFFFF;
+color: #FFFFFF;
 }
 
 #globalactions div select{
-    padding: 2px;
+padding: 2px;
 }
 
 #globalactions span{
-    display: none;
+display: none;
 }
 
 #globalactions .quicklinks,
 #globalactions .quicklinks:focus{
-    border: 0px;
-    width: 120px;
-    margin-top: -3px;
-    margin-bottom: 0px;
+border: 0px;
+width: 120px;
+margin-top: -3px;
+margin-bottom: 0px;
 }
 
 #globalactions .nav .dropdown-menu{
-    text-align: left;
+text-align: left;
 }
 
 #globalactions .nav .dropdown-menu > li > a{
-    display: block;
-    text-shadow: none;
-    color: #333333;
-    padding: 3px 20px;
+display: block;
+text-shadow: none;
+color: #333333;
+padding: 3px 20px;
 }
 
 #globalactions .nav .dropdown-menu > li > a:hover{
-    color: #FFFFFF;
+color: #FFFFFF;
 }
 
 #globalactions .dropdown-toggle:focus,
@@ -498,3 +485,4 @@ border-bottom-color: #FFFFFF;
 border-top-color: #FFFFFF;
 opacity: 1;
 }
+

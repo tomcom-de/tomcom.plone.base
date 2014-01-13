@@ -7,9 +7,9 @@ h1, h2{
     font-size: 11px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-
+.fl-checkbox{
+    float:left;
+    margin-right: 5px;
 }
 
 /***************************************/
@@ -131,7 +131,22 @@ body#content{
     border-bottom: 0;
 }
 */
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+select, textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
     height: auto;
 }
 
@@ -150,21 +165,11 @@ clear: both;
 margin-bottom: 1em;
 }
 
-/*
-.field label{
-display: inline-block;
-}
-*/
 .fieldTextFormat {
 text-align: right;
 margin-right: 0.75em;
 }
-/*
-#content textarea,
-input[type="text"][name$=".title"], input#title {
-    width: 98%;
-}
-*/
+
 /* Bootstrap Plone Fix start */
 
 #subject-tags .newTagsSection {
@@ -177,19 +182,9 @@ margin-bottom: 10px;
 
 .formHelp{
     color: #999999;
-    font-size: 10px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
     display: block;
+    font-weight: normal;
 }
-
-.formHelp:hover{
-    color: #333333;
-    font-size: 12px;
-}
-
 
 #fieldset-dates select,
 .plone_jscalendar select{
@@ -334,10 +329,6 @@ table.listing{
     margin-bottom: 20px;
 }
 
-div.formControls {
-    margin: 0em;
-}
-
 .link-parent{
     padding: 10px 10px 10px 0px;
     display: block;
@@ -372,8 +363,7 @@ div.formControls {
 
 .field input[type="radio"],
 .field input[type="checkbox"] {
-    margin-right: 5px;
-    float: left;
+
 }
 .field br{
     display: none;
@@ -436,10 +426,6 @@ display:inline;
     margin: 0px;
 }
 
-ul.nav{
-    margin-bottom: 0px;
-}
-
 div.overlay a.btn:hover {
 text-decoration: none;
 }
@@ -450,10 +436,6 @@ width: 555px;
 
 .nomargintop{
     margin-top: 0px;
-}
-
-.breadcrumb{
-    margin-bottom: 0px;
 }
 
 .table-user-listing,
@@ -492,3 +474,19 @@ margin-top: -50px;
 .template-translate_item #document-base-edit table{
     border: 0px !important;
 }
+
+input#title {
+height: auto;
+}
+
+.form-control.pat-select2{
+    border: 0px;
+    padding: 0px;
+
+}
+
+/*
+div.formControls {
+    margin: 0em;
+}
+*/
