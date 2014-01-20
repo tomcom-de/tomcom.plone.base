@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '4.3.1.1'
+version = '4.3.1.2'
 
 tests_require = [
     'plone.app.testing',
@@ -29,8 +29,8 @@ setup(name='tomcom.plone.base',
         'setuptools',
         'jarn.jsi18n',
         'tomcom.plone.ptregistry',
-        'tomcom.plone.fontawesome==4.0.3',
-        'tomcom.plone.bootstrap==3.0.2',
+        'tomcom.plone.fontawesome>=4.0.3',
+        'tomcom.plone.bootstrap>=3.0.2',
       ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require,

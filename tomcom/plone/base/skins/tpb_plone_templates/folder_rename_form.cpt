@@ -43,56 +43,61 @@
                        tal:condition="request/orig_template|nothing"
                        tal:attributes="value request/orig_template"/>
 
-                <fieldset tal:repeat="obj items">
+                <div class="well" tal:repeat="obj items">
 
                   <tal:block define="item obj/getId;
                                      item_path python:'/'.join(obj.getPhysicalPath());
                                      error python:errors and errors.get(item, None);">
 
-                    <legend>
-                      <span tal:condition="obj/Title|nothing"
-                            tal:replace="obj/Title" />
-                      <span class="discreet" tal:content="string:(${item})" />
-                    </legend>
+                    <h2 class="margin-top-0">
+                        <span tal:condition="obj/Title|nothing"
+                              tal:replace="obj/Title" />
+                    </h2>
 
+                    <span class="discreet" tal:content="string:(${item})" />
+
+                    <br/>
                     <div class="field"
                          tal:attributes="class python:test(error, 'field error', 'field')">
 
                       <div tal:condition="error"
                            tal:content="error">Validation error output</div>
 
-                      <div tal:define="canRenameItem python:checkPermission('Delete objects', obj) and checkPermission('Copy or Move', obj);"
-                           tal:attributes="class python:test(canRenameItem, nothing, 'error')">
+                        <div class="form-group">
+                          <div tal:define="canRenameItem python:checkPermission('Delete objects', obj) and checkPermission('Copy or Move', obj);"
+                               tal:attributes="class python:test(canRenameItem, nothing, 'error')">
 
-                        <label tal:attributes="for string:${item}_id;"
-                               i18n:translate="label_new_short_name">
-                          New Short Name
-                        </label><div></div>
+                            <label tal:attributes="for string:${item}_id;"
+                                   i18n:translate="label_new_short_name">
+                              New Short Name
+                            </label><div></div>
 
-                        <div class="formHelp"
-                             i18n:translate="help_short_name_url">
-                        Short name is the part that shows up in the URL of the item.
-                        </div>
-                            <span tal:condition="not:canRenameItem"
-                                  i18n:translate="rename_item_not_allowed">
-                                You are not allowed to modify the id of this item.
-                            </span>
+                            <div class="formHelp"
+                                 i18n:translate="help_short_name_url">
+                            Short name is the part that shows up in the URL of the item.
+                            </div>
+                                <span tal:condition="not:canRenameItem"
+                                      i18n:translate="rename_item_not_allowed">
+                                    You are not allowed to modify the id of this item.
+                                </span>
 
-                            <input type="hidden"
-                                   name="paths:list"
-                                   value="fav_999816073"
-                                   tal:condition="canRenameItem"
-                                   tal:attributes="value item_path" />
+                                <input type="hidden"
+                                       name="paths:list"
+                                       value="fav_999816073"
+                                       tal:condition="canRenameItem"
+                                       tal:attributes="value item_path" />
 
-                            <input type="text"
-                                   name="new_ids:list"
-                                   id=""
-                                   value=""
-                                   size="40"
-                                   tal:condition="canRenameItem"
-                                   tal:attributes="value item;
-                                                   id string:${item}_id;" />
+                                <input type="text"
+                                       name="new_ids:list"
+                                       id=""
+                                       value=""
+                                       size="40"
+                                       class="form-control"
+                                       tal:condition="canRenameItem"
+                                       tal:attributes="value item;
+                                                       id string:${item}_id;" />
 
+                          </div>
                       </div>
 
                       <div tal:define="canModifyItem python:checkPermission('Modify portal content', obj);"
@@ -112,6 +117,7 @@
                                    name="new_titles:list"
                                    value="title"
                                    size="40"
+                                   class="form-control"
                                    tal:condition="canModifyItem"
                                    tal:attributes="value obj/Title;
                                                    id string:${item}_title;" />
@@ -122,7 +128,7 @@
 
                   </tal:block>
 
-                </fieldset>
+                </div>
 
                 <div class="formControls">
 

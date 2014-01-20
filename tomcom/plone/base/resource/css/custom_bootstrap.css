@@ -131,6 +131,8 @@ body#content{
     border-bottom: 0;
 }
 */
+
+/*
 select, textarea,
 input[type="text"],
 input[type="password"],
@@ -149,7 +151,7 @@ input[type="color"],
 .uneditable-input {
     height: auto;
 }
-
+*/
 .cke_dialog_ui_input_text input{
     border-radius: 0 0 0 0 !important;
     box-shadow: none !important;
