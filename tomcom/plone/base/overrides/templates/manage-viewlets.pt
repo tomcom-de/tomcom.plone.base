@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+      <metal:css_slot fill-slot="style_slot">
+            <style type="text/css" media="screen">
+                .viewletmanager, .viewlet { display: block; margin: .5em;}
+                .viewletmanager { border: 1px solid #000;}
+                .viewletmanager > dt { border-bottom: 1px solid #000; }
+                .viewletmanager > dt, .viewlet > dt { font-size: .8em; background: #EEE; padding: .5em; }
+                .viewlet { border: 1px solid #999; }
+                .viewlet > dt { border-bottom: 1px solid #999; }
+                .viewlet > dt > a.viewlet-show { display: none; }
+                .viewlet > dt > a.viewlet-hide { display: inline; }
+                .viewletmanager dd, .viewlet dd { padding: .5em; }
+                .viewlet.hiddenViewlet > dt > a.viewlet-hide{ display:none; }
+                .viewlet.hiddenViewlet > dt > a.viewlet-show { display: inline; }
+            </style>
+      </metal:css_slot>
+
+      <metal:javascript_head_slot fill-slot="javascript_head_slot">
+          <script type="text/javascript" charset="utf-8">
+              $(document).ready(function() {
+                registerClickEvents();
+              });
+
+              function registerClickEvents(){
+                  $('.viewlet-up, .viewlet-down, .viewlet-hide, .viewlet-show').click(function () {
+                        url = $(this).attr('href');
+                        vm = $(this).parents().filter('.managedViewlets').get(0);
+                        $(vm).load(url + ' #' + $(vm).attr('id') + '.managedViewlets > dl','',function(){registerClickEvents();});
+                        return false;
+                    });
+                }
+          </script>
+      </metal:javascript_head_slot>
+
+
+<body>
+<metal:main fill-slot="main">
+
+    <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="label_title">
+      Title
+    </h1>
+
+    <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+    <div class="documentDescription"
+       i18n:translate="label_description">
+        Description
+    </div>
+
+    <div tal:replace="structure provider:plone.abovecontentbody" />
+
+    <div id="content-core">
+        <p>
+            This item does not have any body text, click the edit tab to change it.
+        </p>
+    </div>
+
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+
+</metal:main>
+
+</body>
+</html>
+

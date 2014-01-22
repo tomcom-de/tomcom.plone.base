@@ -34,6 +34,15 @@
         new_path="overrides/templates/folder_contents.pt"
         />
 
-folder_contents_table
+
+    <ptf:patch
+        current_path="/eggs/plone.app.viewletmanager-2.0.4-py2.7.egg/plone/app/viewletmanager/manage-viewletmanager.pt"
+        new_path="overrides/templates/manage-viewletmanager.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.app.viewletmanager-2.0.4-py2.7.egg/plone/app/viewletmanager/manage-viewlets.pt"
+        new_path="overrides/templates/manage-viewlets.pt"
+        />
 
 </configure>
