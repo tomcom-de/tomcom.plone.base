@@ -15,10 +15,6 @@
  <stylesheet title="" applyPrefix="False" authenticated="False"
     bundle="default" cacheable="False" compression="none"
     conditionalcomment="" cookable="False" enabled="on" expression=""
-    id="++theme++tcpb/css/font.css" media="" rel="stylesheet" rendering="link"/>
- <stylesheet title="" applyPrefix="False" authenticated="False"
-    bundle="default" cacheable="False" compression="none"
-    conditionalcomment="" cookable="False" enabled="on" expression=""
     id="++theme++tcpb/css/toolbar.css" media="" rel="stylesheet" rendering="link"/>
  <stylesheet title="" applyPrefix="False" authenticated="False"
     bundle="default" cacheable="False" compression="none"
