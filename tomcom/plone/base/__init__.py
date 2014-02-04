@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import logging
+import patches
 logger = logging.getLogger('tomcom.plone.base')
 logger.debug('Installing Product')
+
 
 from Products.CMFCore.DirectoryView import registerFileExtension
 from Products.CMFCore.FSFile import FSFile

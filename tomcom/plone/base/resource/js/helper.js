@@ -16,4 +16,11 @@ $(document).ready(function () {
     if ($('.datepicker').length) {
         $( '.datepicker' ).datepicker();
     }
+
+    $( "body" ).delegate( ".int-only", "keyup", function(event) {
+        value_=$(event.target).attr('value');
+        value_=value_.replace(/[^\d]/g, "");
+        $(event.target).attr('value',value_);
+    });
+
 });
