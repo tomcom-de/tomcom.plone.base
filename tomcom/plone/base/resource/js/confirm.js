@@ -5,7 +5,7 @@ $(document).ready(function () {
         msgstr = _(msgid = 'You really want to delete this content?', domain = 'plone');
         value=confirm(msgstr);
         if (value == false) {
-            event.defaultPrevented();
+            event.preventDefault();
             return false
         };
     });
@@ -14,7 +14,7 @@ $(document).ready(function () {
         msgstr = _(msgid = 'Are you sure?',domain = 'plone');
         value=confirm(msgstr);
         if (value == false) {
-            event.defaultPrevented();
+            event.preventDefault();
             return false
         };
 
