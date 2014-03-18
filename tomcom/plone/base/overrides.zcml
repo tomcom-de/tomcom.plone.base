@@ -11,7 +11,7 @@
 
   <browser:page
       name="usergroup-userprefs"
-      for="*"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class="plone.app.controlpanel.usergroups.UsersOverviewControlPanel"
       permission="plone.app.controlpanel.UsersAndGroups"
       template="overrides/templates/usergroups_usersoverview.pt"
@@ -19,41 +19,10 @@
 
   <browser:page
       name="usergroup-groupprefs"
-      for="*"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class="plone.app.controlpanel.usergroups.GroupsOverviewControlPanel"
       permission="plone.app.controlpanel.UsersAndGroups"
       template="overrides/templates/usergroups_groupsoverview.pt"
-      />
-
-    <browser:page
-      name="new-user"
-      for="*"
-      class="plone.app.users.browser.register.AddUserForm"
-      permission="plone.app.controlpanel.UsersAndGroups"
-      />
-
-  <browser:page
-      name="usergroup-groupdetails"
-      for="*"
-      class="plone.app.controlpanel.usergroups.GroupDetailsControlPanel"
-      permission="plone.app.controlpanel.UsersAndGroups"
-      template="overrides/templates/usergroups_groupdetails.pt"
-      />
-
-    <browser:page
-      for="*"
-      name="user-information"
-      class="plone.app.users.browser.personalpreferences.UserDataConfiglet"
-      permission="plone.app.controlpanel.UsersAndGroups"
-      />
-
-
-  <browser:page
-      name="usergroup-groupmembership"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      class="plone.app.controlpanel.usergroups.GroupMembershipControlPanel"
-      permission="plone.app.controlpanel.UsersAndGroups"
-      template="overrides/templates/usergroups_groupmembership.pt"
       />
 
 </configure>
