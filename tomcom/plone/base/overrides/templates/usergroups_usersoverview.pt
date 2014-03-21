@@ -15,7 +15,7 @@
                 b_start python:0 if showAll or view.newSearch else request.get('b_start',0);
                 b_size python:showAll and len(view.searchResults) or 20;
                 portal_roles view/portal_roles;
-                portal_url context/portal_url;">
+                portal_url context/portal_url">
 
     <div class="documentEditable">
         <div id="edit-bar">
