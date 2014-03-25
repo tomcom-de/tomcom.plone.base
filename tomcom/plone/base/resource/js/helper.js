@@ -23,4 +23,12 @@ $(document).ready(function () {
         $(event.target).attr('value',value_);
     });
 
+    $( "body" ).delegate( ".select-all", "click", function(event) {
+        if ($(event.target).attr('checked')=='checked') {
+            $('.'+$(event.target).attr('rel')).attr('checked','checked');
+        } else {
+            $('.'+$(event.target).attr('rel')).attr('checked',null);
+        }
+    });
+
 });
