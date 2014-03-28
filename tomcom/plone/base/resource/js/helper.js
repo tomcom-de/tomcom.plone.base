@@ -31,4 +31,11 @@ $(document).ready(function () {
         }
     });
 
+    $( "body" ).delegate( ".form-post-button", "click", function(event) {
+        form_=$($(event.target).attr('data-form'));
+        $(form_).attr('action',$(event.target).attr('data-action'));
+        $(form_).submit();
+    });
+
+
 });
