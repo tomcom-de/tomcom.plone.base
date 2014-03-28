@@ -97,10 +97,10 @@
     line-height: 1.6em;
 }
 
-.plone-toolbar .contentActions a {
+.plone-toolbar .contentActions a,
+.plone-toolbar .contentActions .actionMenuHeader>span {
     padding: 6px 13px 4px 13px;
     color: #333333;
-    /*text-shadow: 0 1px 0 #DDDDDD;*/
     margin-right: 0px;
     display: block;
 }
