@@ -195,12 +195,12 @@ div.listingBar {
 }
 
 div.listingBar .next {
-    display: inline-block;
+    display: inline;
     float: right;
 }
 
 div.listingBar .previous {
-    display: inline-block;
+    display: inline;
 }
 
 div.listingBar a {
@@ -209,11 +209,6 @@ div.listingBar a {
     border: 0.1em solid #ccc;
 }
 
-div.listingBar a:hover {
-    color: White;
-    background-color: #329fd7;
-    border-color: #329fd7;
-}
 
 /* @end */
 

@@ -1,5 +1,6 @@
 <div class="text-center">
     <div i18n:domain="plone"
+         class="listingBar"
          metal:define-macro="navigation"
          tal:define="batch view/batch|nothing;"
          tal:condition="batch">
