@@ -23,4 +23,19 @@ $(document).ready(function () {
         $(event.target).attr('value',value_);
     });
 
+    $( "body" ).delegate( ".select-all", "click", function(event) {
+        if ($(event.target).attr('checked')=='checked') {
+            $('.'+$(event.target).attr('rel')).attr('checked','checked');
+        } else {
+            $('.'+$(event.target).attr('rel')).attr('checked',null);
+        }
+    });
+
+    $( "body" ).delegate( ".form-post-button", "click", function(event) {
+        form_=$($(event.target).attr('data-form'));
+        $(form_).attr('action',$(event.target).attr('data-action'));
+        $(form_).submit();
+    });
+
+
 });
