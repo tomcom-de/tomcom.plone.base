@@ -693,7 +693,7 @@ dl.toc dd ol {
     margin: 0em;
     padding: 0px 6px 0px 9px;
     text-align: center;
-    background-image: url(/'polaroid-single.png');
+    background-image: url('/polaroid-single.png');
     background-repeat: no-repeat;
 }
 .photoAlbumEntry img {
@@ -716,7 +716,7 @@ dl.toc dd ol {
     margin: 16px auto 0px;
 }
 .photoAlbumFolder {
-    background-image: url(/'polaroid-multi.png');
+    background-image: url('/polaroid-multi.png');
     background-repeat: no-repeat;
 }
 .photoAlbumEntryTitle {
