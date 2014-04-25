@@ -6,7 +6,7 @@
         title="Is Site Administrator"/>
 
     <permission
-        id="zope2.IsTomcom"
-        title="Is Tomcom"/>
+        id="zope2.IsManager"
+        title="Is Manager"/>
 
 </configure>
