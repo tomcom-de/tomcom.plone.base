@@ -4,5 +4,8 @@
     <permission name="Is Site Administrator" acquire="True">
       <role name="Site Administrator"/>
     </permission>
+    <permission name="Is Tomcom" acquire="True">
+      <role name="Manager"/>
+    </permission>
   </permissions>
 </rolemap>
