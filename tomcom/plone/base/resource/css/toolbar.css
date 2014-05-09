@@ -4,7 +4,7 @@
 .plone-toolbar{
 font-size: 12px;
 position: relative;
-z-index: 10000;
+z-index: 9000;
 }
 
 .plone-toolbar ul{
@@ -461,6 +461,7 @@ margin-bottom: 0px;
 
 #globalactions .nav .dropdown-menu{
 text-align: left;
+margin-top: 10px;
 }
 
 #globalactions .nav .dropdown-menu > li > a{
@@ -471,7 +472,7 @@ padding: 3px 20px;
 }
 
 #globalactions .nav .dropdown-menu > li > a:hover{
-color: #FFFFFF;
+
 }
 
 #globalactions .dropdown-toggle:focus,
