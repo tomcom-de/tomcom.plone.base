@@ -4,7 +4,7 @@
 .plone-toolbar{
 font-size: 12px;
 position: relative;
-z-index: 9000;
+z-index: 8000;
 }
 
 .plone-toolbar ul{
