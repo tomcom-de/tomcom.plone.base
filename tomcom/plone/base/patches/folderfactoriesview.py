@@ -7,7 +7,7 @@ def add_context(self):
     context = self.context
     context_state = getMultiAdapter((context, self.request),
                                     name='plone_context_state')
-    print '____'
+
     if context.isPrincipiaFolderish:
         return context
     else:
