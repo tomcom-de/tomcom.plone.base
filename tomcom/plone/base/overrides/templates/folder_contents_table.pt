@@ -85,7 +85,8 @@
 
       <metal:block tal:condition="view/batch">
         <tbody>
-          <tal:items tal:repeat="item view/batch">
+          <tal:items tal:repeat="item view/batch"
+                     tal:on-error="item">
             <tr  tal:define="id item/id|item/getId;
                              title item/title|item/Title|item/title_or_id;
                              title_or_id python:title or id;"
