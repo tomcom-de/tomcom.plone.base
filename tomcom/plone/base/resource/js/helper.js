@@ -24,6 +24,20 @@ $(document).ready(function () {
         $(form_).submit();
     });
 
+    $( "body" ).delegate( ".form-post-button-confirm", "click", function(event) {
+
+        msgstr = _(msgid = 'Are you sure?',domain = 'plone');
+        value=confirm(msgstr);
+        if (value == false) {
+            event.preventDefault();
+            return false
+        };
+
+        form_=$($(event.target).attr('data-form'));
+        $(form_).attr('action',$(event.target).attr('data-action'));
+        $(form_).submit();
+    });
+
 });
 
 
