@@ -9,4 +9,8 @@
         id="zope2.IsManager"
         title="Is Manager"/>
 
+    <permission
+        id="zope2.IsTomcom"
+        title="Is Tomcom"/>
+
 </configure>
