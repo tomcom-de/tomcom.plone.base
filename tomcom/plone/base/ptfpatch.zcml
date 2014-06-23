@@ -6,17 +6,32 @@
 
     <ptf:patch
         current_path="/eggs/plone.batching-1.0-py2.7.egg/plone/batching/batchnavigation_bootstrap.pt"
-        new_path="overrides/templates/batchnavigation_bootstrap.pt"
+        new_path="overrides/templates/batchnavigation_bootstrap_1_0.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.batching-1.0.2-py2.7.egg/plone/batching/batchnavigation_bootstrap.pt"
+        new_path="overrides/templates/batchnavigation_bootstrap_1_0_2.pt"
         />
 
     <ptf:patch
         current_path="/eggs/plone.batching-1.0-py2.7.egg/plone/batching/batchnavigation.pt"
-        new_path="overrides/templates/batchnavigation_bootstrap.pt"
+        new_path="overrides/templates/batchnavigation_bootstrap_1_0.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.batching-1.0.2-py2.7.egg/plone/batching/batchnavigation.pt"
+        new_path="overrides/templates/batchnavigation_bootstrap_1_0_2.pt"
         />
 
     <ptf:patch
         current_path="/eggs/archetypes.referencebrowserwidget-2.4.19-py2.7.egg/archetypes/referencebrowserwidget/browser/popup.pt"
-        new_path="overrides/templates/refbrowser_popup.pt"
+        new_path="overrides/templates/refbrowser_popup_2_4_19.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/archetypes.referencebrowserwidget-2.4.20-py2.7/archetypes/referencebrowserwidget/browser/popup.pt"
+        new_path="overrides/templates/refbrowser_popup_2_4_19.pt"
         />
 
     <ptf:patch
@@ -26,23 +41,42 @@
 
     <ptf:patch
         current_path="/eggs/plone.app.content-2.1.3-py2.7.egg/plone/app/content/browser/table.pt"
-        new_path="overrides/templates/folder_contents_table.pt"
+        new_path="overrides/templates/folder_contents_table_2_1_3.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.app.content-2.1.4-py2.7.egg/plone/app/content/browser/table.pt"
+        new_path="overrides/templates/folder_contents_table_2_1_3.pt"
         />
 
     <ptf:patch
         current_path="/eggs/plone.app.content-2.1.3-py2.7.egg/plone/app/content/browser/folder_contents.pt"
-        new_path="overrides/templates/folder_contents.pt"
+        new_path="overrides/templates/folder_contents_2_1_3.pt"
         />
 
+    <ptf:patch
+        current_path="/eggs/plone.app.content-2.1.4-py2.7.egg/plone/app/content/browser/folder_contents.pt"
+        new_path="overrides/templates/folder_contents_2_1_3.pt"
+        />
 
     <ptf:patch
         current_path="/eggs/plone.app.viewletmanager-2.0.4-py2.7.egg/plone/app/viewletmanager/manage-viewletmanager.pt"
-        new_path="overrides/templates/manage-viewletmanager.pt"
+        new_path="overrides/templates/manage-viewletmanager_2_0_4.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.app.viewletmanager-2.0.5-py2.7.egg/plone/app/viewletmanager/manage-viewletmanager.pt"
+        new_path="overrides/templates/manage-viewletmanager_2_0_4.pt"
         />
 
     <ptf:patch
         current_path="/eggs/plone.app.viewletmanager-2.0.4-py2.7.egg/plone/app/viewletmanager/manage-viewlets.pt"
-        new_path="overrides/templates/manage-viewlets.pt"
+        new_path="overrides/templates/manage-viewlets_2_0_4.pt"
+        />
+
+    <ptf:patch
+        current_path="/eggs/plone.app.viewletmanager-2.0.5-py2.7.egg/plone/app/viewletmanager/manage-viewlets.pt"
+        new_path="overrides/templates/manage-viewlets_2_0_4.pt"
         />
 
 </configure>
