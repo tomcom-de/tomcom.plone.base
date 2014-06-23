@@ -2,13 +2,13 @@
      http://twitter.github.com/bootstrap/components.html#pagination
      -->
 <div class="text-center">
-<div class="pagination"
+<div class="listingBar"
   i18n:domain="plone"
   metal:define-macro="navigation"
   tal:define="batch view/batch|nothing;"
   tal:condition="batch">
 
-  <ul class="pager"
+  <ul class="pagination"
     tal:condition="batch/multiple_pages">
 
     <!-- First -->
@@ -33,8 +33,11 @@
         </span>
       </a>
     </li>
+
     <li tal:condition="batch/has_previous">
-      &hellip;&nbsp;
+        <a href="#" class="no-click">
+            &hellip;&nbsp;
+        </a>
     </li >
 
     <!-- Pagelist with links to previous pages for quick navigation -->
@@ -56,7 +59,9 @@
 
     <!-- Next -->
     <li tal:condition="batch/has_next">
-      &nbsp;&hellip;
+        <a href="#" class="no-click">
+            &nbsp;&hellip;
+        </a>
     </li>
     <li class="next" tal:condition="batch/has_next">
       <a href="" tal:attributes="href python:view.make_link(batch.nextpage)">
@@ -82,5 +87,4 @@
 
   </ul>
 
-</div>
 </div>
