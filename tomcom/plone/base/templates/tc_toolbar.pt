@@ -14,7 +14,7 @@
             </div>
             <div class="">
                 <a tal:attributes="href string:${here/portal_url}/plone_memberprefs_panel">
-                    <i class="icon-user"></i>
+                    <i class="fa fa-user"></i>
                     &nbsp;
                     <tal:block tal:define="user python:here.getAdapter('auth')()"
                                tal:content="python:user.getId()+' ('+(user and user.getProperty('fullname') and user.getProperty('fullname') or user.getId())+')'"/>
@@ -23,7 +23,7 @@
             <div>
                 <a tal:attributes="href string:${here/absolute_url}/logout"
                    i18n:translate="">
-                   <i class="icon-signout"></i>
+                   <i class="fa fa-sign-out"></i>
                    &nbsp;Ausloggen
                 </a>
             </div>

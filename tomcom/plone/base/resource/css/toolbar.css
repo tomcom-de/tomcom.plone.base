@@ -441,6 +441,7 @@ display: inline-block;
 
 #globalactions div a:hover{
 color: #FFFFFF;
+text-decoration: none;
 }
 
 #globalactions div select{
@@ -477,7 +478,6 @@ padding: 3px 20px;
 
 #globalactions .dropdown-toggle:focus,
 #globalactions .dropdown-toggle:hover {
-text-decoration:underline;
 background-color:transparent;
 }
 
@@ -487,3 +487,35 @@ border-top-color: #FFFFFF;
 opacity: 1;
 }
 
+#globalactions .nav.quicklinks .open>a,
+#globalactions .nav.quicklinks .open>a:hover,
+#globalactions .nav.quicklinks .open>a:focus {
+background-color: transparent;
+border-color: #428bca;
+}
+
+#content ul.configlets{
+padding-left: 0px;
+}
+
+.template-personal-preferences .field input[type="radio"],
+.template-personal-preferences .field input[type="checkbox"] {
+float: left;
+margin-right: 5px;
+}
+
+.template-personal-preferences .contentViews{
+padding-left: 0px;
+border-bottom: 1px solid #DDDDDD;
+}
+
+.template-personal-preferences #portal-column-content .contentViews li a{
+border: 1px solid #DDDDDD;
+padding: 10px;
+display: inline-block;
+margin-bottom: -1px;
+}
+
+.template-personal-preferences #portal-column-content .contentViews li.selected a{
+text-decoration: underline;
+}

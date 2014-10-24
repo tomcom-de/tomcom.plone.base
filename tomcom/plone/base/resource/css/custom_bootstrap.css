@@ -1,15 +1,15 @@
 h1, h2{
-    letter-spacing: 0px;
+letter-spacing: 0px;
 }
 
 
 .formHelp {
-    font-size: 11px;
+font-size: 11px;
 }
 
 .fl-checkbox{
-    float:left;
-    margin-right: 5px;
+float:left;
+margin-right: 5px;
 }
 
 /***************************************/
@@ -119,16 +119,16 @@ outline-offset: -2px;
 
 
 body#content{
-    margin-left: 0px;
-    margin-right: 0px;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 #content h1.documentFirstHeading{
-	margin
+margin
 }
 /*
 #content a:link, dl.portlet a:link {
-    border-bottom: 0;
+border-bottom: 0;
 }
 */
 
@@ -149,17 +149,17 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-    height: auto;
+height: auto;
 }
 */
 .cke_dialog_ui_input_text input{
-    border-radius: 0 0 0 0 !important;
-    box-shadow: none !important;
-    margin-bottom: 0 !important;
+border-radius: 0 0 0 0 !important;
+box-shadow: none !important;
+margin-bottom: 0 !important;
 }
 
 #plone-browser input {
-    padding: 4px 6px !important;
+padding: 4px 6px !important;
 }
 
 .field {
@@ -178,14 +178,28 @@ margin-right: 0.75em;
 margin-left: 0em;
 }
 
+#fieldset-dates{
+margin-bottom: 5px;
+}
+
 #fieldset-dates .formQuestion {
 margin-bottom: 10px;
+text-align: left;
+font-size: 14px;
+font-weight: bold;
+padding: 0px;
+}
+
+#fieldset-dates .formQuestion .formHelp{
+margin-top: 5px;
+color: #999999 !important;
 }
 
 .formHelp{
-    color: #999999;
-    display: block;
-    font-weight: normal;
+color: #999999;
+display: block;
+font-weight: normal;
+margin-bottom: 5px;
 }
 
 #fieldset-dates select,
@@ -201,17 +215,17 @@ form fieldset{
 }
 
 .template-stage_edit fieldset legend{
-    background-color: #cccccc;
-    color: #333333;
-    padding-left: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+background-color: #cccccc;
+color: #333333;
+padding-left: 10px;
+font-size: 14px;
+font-weight: bold;
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 }
 
 .template-stage_edit #content fieldset ul{
-    list-style: none;
-    margin-left: 5px;
+list-style: none;
+margin-left: 5px;
 }
 
 .template-stage_edit #content form{
@@ -219,10 +233,10 @@ form fieldset{
 }
 
 .template-stage_edit fieldset fieldset legend{
-    font-size: 14px;
-    background-color: transparent;
-    color: #333333;
-    font-weight: normal;
+font-size: 14px;
+background-color: transparent;
+color: #333333;
+font-weight: normal;
 }
 
 /* Bootstrap Plone Fix end */
@@ -230,7 +244,7 @@ form fieldset{
 
 
 dl.portalMessage{
-    margin-left: 0px;
+margin-left: 0px;
 }
 
 dl.portalMessage,
@@ -243,15 +257,15 @@ div.important,
 div.note,
 div.tip,
 div.warning {
-    font-size: 100%;
-    padding: 10px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+font-size: 100%;
+padding: 10px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 dl.portalMessage{
-    color: #468847;
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
+color: #468847;
+background-color: #dff0d8;
+border-color: #d6e9c6;
 }
 
 dl.portalMessage,
@@ -261,9 +275,9 @@ div.tip,
 dl.hint,
 dl.note,
 dl.tip{
-    color: #3a87ad;
-    background-color: #d9edf7;
-    border-color: #bce8f1;
+color: #3a87ad;
+background-color: #d9edf7;
+border-color: #bce8f1;
 }
 
 div.attention,
@@ -272,36 +286,36 @@ div.warning,
 dl.attention,
 dl.caution,
 dl.warning{
-    color: #c09853;
-    background-color: #fcf8e3;
-    border: 1px solid #fbeed5;
+color: #c09853;
+background-color: #fcf8e3;
+border: 1px solid #fbeed5;
 }
 
 div.error,
 dl.error{
-    color: #b94a48;
-    background-color: #f2dede;
-    border-color: #eed3d7;
+color: #b94a48;
+background-color: #f2dede;
+border-color: #eed3d7;
 }
 
 div.danger,
 dl.danger{
-    color: #b94a48;
-    background-color: #f2dede;
-    border-color: #eed3d7;
+color: #b94a48;
+background-color: #f2dede;
+border-color: #eed3d7;
 }
 
 .label .formHelp,
 .label .formHelp:hover{
-    color: #FFFFFF;
-    white-space: normal;
+color: #FFFFFF;
+white-space: normal;
 }
 
 dl.portalMessage dt,
 div > .admonition-title{
-    text-shadow: none;
-    background-color: #FFF;
-    color: #a1a1a1;
+text-shadow: none;
+background-color: #FFF;
+color: #a1a1a1;
 }
 
 .attention > dd, .attention > .last,
@@ -313,54 +327,54 @@ div > .admonition-title{
 .note > dd, .tip .last,
 .tip > dd, .important > .last,
 .warning > dd, .warning > .last{
-    background-color: transparent;
+background-color: transparent;
 }
 
 div.overlay div.close{
-    left: auto;
-    right: -14px;
-    opacity: 1;
+left: auto;
+right: -14px;
+opacity: 1;
 }
 
 div.overlay{
-    font-size: 100%;
+font-size: 100%;
 }
 
 table.listing{
-    width: 100%;
-    margin-bottom: 20px;
+width: 100%;
+margin-bottom: 20px;
 }
 
 .link-parent{
-    padding: 10px 10px 10px 0px;
-    display: block;
-    /*
-    float: left;
-    */
+padding: 10px 10px 10px 0px;
+display: block;
+/*
+float: left;
+*/
 }
 
 .link-parent:after{
-    clear: both;
-    display:table;
-    line-height:0;
-    content:""
+clear: both;
+display:table;
+line-height:0;
+content:""
 }
 
 .well h3{
-    margin-top: 0px;
-    margin-bottom: 10px;
+margin-top: 0px;
+margin-bottom: 10px;
 }
 
 .bold{
-    font-weight: bold;
+font-weight: bold;
 }
 
 .template-configure_stage .well label{
-    display: block;
+display: block;
 }
 
 .cke_skin_kama input.cke_dialog_ui_input_text, .cke_skin_kama input.cke_dialog_ui_input_password {
-    height: auto !important;
+height: auto !important;
 }
 
 .field input[type="radio"],
@@ -368,7 +382,7 @@ table.listing{
 
 }
 .field br{
-    display: none;
+display: none;
 }
 
 .pb-ajax > div {
@@ -380,16 +394,14 @@ width: auto;
 .formQuestion.label{
 display: inline-block;
 padding: 2px 4px;
-font-size: 11.844px;
-font-weight: normal;
+font-size: 14px;
+font-weight: bold;
 line-height: 14px;
 color: #ffffff;
 vertical-align: baseline;
 white-space: nowrap;
 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 background-color: #999999;
-
-
 color: #333333;
 text-shadow: none;
 background-color: transparent;
@@ -421,11 +433,11 @@ display:inline;
 }
 
 .well-white{
-    background-color: #FFFFFF;
+background-color: #FFFFFF;
 }
 
 .nomargin{
-    margin: 0px;
+margin: 0px;
 }
 
 div.overlay a.btn:hover {
@@ -437,13 +449,13 @@ width: 555px;
 }
 
 .nomargintop{
-    margin-top: 0px;
+margin-top: 0px;
 }
 
 .table-user-listing,
 .table-group-listing{
-    font-size: 12px;
-    margin-top: 20px;
+font-size: 12px;
+margin-top: 20px;
 }
 
 .template-usergroup-userprefs #portal-column-content,
@@ -466,15 +478,15 @@ margin-top: -50px;
 }
 
 .related-items-table-content-types{
-    display: block;
+display: block;
 }
 
 .template-translate_item td.canonicalLanguage{
-    display: none;
+display: none;
 }
 
 .template-translate_item #document-base-edit table{
-    border: 0px !important;
+border: 0px !important;
 }
 
 input#title {
@@ -482,13 +494,50 @@ height: auto;
 }
 
 .form-control.pat-select2{
-    border: 0px;
-    padding: 0px;
-
+border: 0px;
+padding: 0px;
 }
 
-/*
-div.formControls {
-    margin: 0em;
+.existingTags input[type=radio],
+.existingTags input[type=checkbox]{
+margin-right: 5px;
+margin-top: 0px;
 }
-*/
+
+.existingTags .optionsBox label{
+padding: 5px;
+}
+
+.tagsContainer .existingTagsSection{
+margin-left: 0px;
+}
+
+.newTagsSection .newTagsTitle,
+.newTagsSection .newTagsHelp {
+float: none;
+}
+
+.field label{
+    margin-bottom: 0px;
+}
+
+.hr-white{
+    border-top: 1px  solid #FFFFFF;
+}
+
+.hr-black{
+    border-top: 1px  solid #999999;
+}
+
+.hr-grey{
+    border-top: 1px  solid #BEBEBE;
+}
+
+.hr-dark-grey{
+    border-top: 1px  solid #666666;
+}
+
+.well-login .well-login-col{
+float: none;
+margin: auto;
+}
