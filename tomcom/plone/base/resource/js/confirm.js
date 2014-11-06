@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    jarn.i18n.loadCatalog('plone', 'de');
+    jarn.i18n.loadCatalog('jsi18n', 'de');
     _ = jarn.i18n.translate
     $("body").delegate( ".confirm-delete", "click", function(event) {
         msgstr = _(msgid = 'You really want to delete this content?', domain = 'plone');
