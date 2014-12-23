@@ -2,13 +2,20 @@
     <div i18n:domain="plone"
          class="listingBar"
          metal:define-macro="navigation"
-         tal:define="batch view/batch|nothing;"
+         tal:define="batch view/batch|nothing;
+                     tcbase nocall:context/@@tcbase "
          tal:condition="batch">
 
       <ul class="pagination"
           tal:condition="batch/multiple_pages">
 
         <!-- First -->
+        <li>
+            <a tal:attributes="href python:tcbase.make_link_all(view)">
+                <span i18n:translate="">Show all</span>
+            </a>
+        </li>
+
         <li class="previous" tal:condition="batch/show_link_to_first">
           <a href="" tal:attributes="href python:view.make_link(1)">
             <span >&laquo;</span>

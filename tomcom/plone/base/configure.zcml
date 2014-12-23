@@ -42,4 +42,12 @@
         factory="zope.annotation.attribute.AttributeAnnotations"  />
 
 
+    <browser:page
+        for="*"
+        name="tcbase"
+        class=".browser.Browser"
+        permission="zope2.View"
+        allowed_interface=".browser.ITCBase"
+        />
+
 </configure>
