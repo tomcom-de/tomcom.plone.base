@@ -132,7 +132,8 @@
               <td>
                   <img tal:replace="structure item/icon|nothing" />
                   <a href="#" tal:define="state_class item/state_class|string:;
-                                          type_class item/type_class|string:;"
+                                          type_class item/type_class|string;
+                                          type_class string:contenttype-icon ${type_class};"
                               tal:attributes="href  item/view_url|string:${view/base_url}/${id};
                                               title item/url_href_title|nothing;
                                               class string: ${state_class} ${type_class};">

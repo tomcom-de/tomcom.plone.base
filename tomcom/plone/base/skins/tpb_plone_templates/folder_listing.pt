@@ -75,8 +75,8 @@
                         <img tal:replace="structure item_icon/html_tag" />
                         <a href="#"
                            tal:attributes="href python:test(item_type in use_view_action, item_url+'/view', item_url);
-                                           class string:$item_type_class $item_wf_state_class url"
-                           tal:content="item_title_or_id">
+                                           class string:$item_type_class $item_wf_state_class url contenttype-icon"
+                           tal:content="structure item_title_or_id">
                             Item Title
                         </a>
                     </span>
@@ -166,9 +166,7 @@
 
                 <dd tal:condition="item_description">
                     <span class="description"
-                           tal:content="item_description">
-                        description
-                    </span>
+                          tal:content="structure item_description"/>
                 </dd>
             </metal:block>
             </tal:block>
